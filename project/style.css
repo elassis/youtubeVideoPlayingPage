@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family:Roboto,arial;
+    
+}
+body{
+    background-color: rgb(24, 23, 23);
 }
 /*navbar-coding*/
 .navbar{
@@ -10,13 +14,12 @@
     display:grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-areas: "column1 column2 column3";
-    background-color: red;
+    background-color: rgb(31, 30, 30);
 
 }
 
 .column1{
     grid-area: column1;
-    background-color: blue;
     display:grid;
     grid-template-columns: 25% 75%;
     justify-content: center;
@@ -38,14 +41,14 @@
     align-self: center;
 }
 .column1 > .c2 > img{
-    width: 95px;
+    width: 135px;
     height: 50px;
 }
 .column2{
     display:grid;
     width: 100%;
     grid-area: column2;
-    background-color: purple;
+    
     justify-content: center; 
     grid-template-columns: 90% 10%; 
     grid-template-areas: "search microphone"; 
@@ -56,18 +59,24 @@
     width: 100%;
     grid-template-columns: 90% 10%;
     justify-content: center;
-    background-color: green;
+    
 }
 .search-bar>input{
-    width: 96%;
+    width: 96.8%;
     font-size: 16px;
     align-self: center;
     padding: 6px 10px;
+    background-color: rgb(19, 18, 18);
+    color:rgb(182, 173, 173);
+    border:1px solid #353434;
 }
-.search-bar>button{
+.search-bar> button{
     width: 100%;
     align-self: center;
-    padding: 6px 10px 9px 10px;
+    padding: 7px 10px 10px 10px;
+    border: none;
+    color:grey;
+    background-color: #343434;
 }
 .column2 > img{
     width: 30px;
@@ -79,7 +88,7 @@
 .column3{
     grid-area: column3;
     display: grid;    
-    background-color: yellow;
+    background-color: rgb(31, 30, 30);
     grid-template-columns: 25% 25% 25% 25%;
        
 }
@@ -97,12 +106,13 @@
     height: 25px;
 }
 .column3>.c3 >img{
-    width:50px;
+    width:25px;
     height: 25px;
 }
 .column3>.c4 >img{
     width:25px;
     height: 25px;
+    border-radius: 15px;
 }
 /*body-coding*/
 .container-body{
@@ -111,7 +121,7 @@
     display:grid;
     margin:auto;
     margin-top:20px;
-    grid-template-columns: 70% 27%;
+    grid-template-columns: 65% 33%;
     gap: 2%;
     grid-template-areas: "player side";
 
@@ -119,19 +129,67 @@
 .container-player{
     width: 100%;
     grid-area:player;
-    background-color: red;
-
+    display:grid;    
+    grid-template-rows: 33% 4% 3%;
+    grid-template-areas: "player"
+    "title"
+    "views";
+}
+ .player{
+    grid-area: player;
+    background-color:black;
+    
+}
+ .video-title{
+    grid-area: title;
+    align-self: center; 
+}
+.video-title > h1{
+    font-size: 18px;
+    color:#fff;
+    font-weight: normal;
+}
+.video-views{
+   grid-area: views; 
+}
+.video-views > p{
+    color:rgb(143, 137, 137);
 }
 .container-sidebar{
     width: 100%;
     grid-area:side;
     background-color: orange;
     display:grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 9% 90%;
     grid-template-areas: "playNext"
     "allVideos";
 }
 .next-video{
     grid-area:playNext;
     background-color: rgb(0, 174, 255);
+    display:grid;
+    grid-template-columns: 50% 50%;
+
 }
+.min-video{
+    width: 100%;
+    background-color:skyblue;
+}
+.video-text{
+    display:grid;
+    grid-template-rows: 40% 30% 30%;
+    
+}
+.min-title{
+    width:100%;
+    background-color: yellow;
+}
+.min-channel{
+    width:100%;
+    background-color: rgb(21, 255, 0);
+}
+.min-visualizations{
+    width:100%;
+    background-color: rgb(234, 0, 255);
+}
+
