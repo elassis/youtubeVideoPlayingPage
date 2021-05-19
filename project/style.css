@@ -161,7 +161,6 @@ body{
 .container-sidebar{
     width: 100%;
     grid-area:side;
-    background-color: orange;
     display:grid;
     grid-template-rows: 9% 9% 9% 9%;
     gap:10px;
@@ -172,29 +171,28 @@ body{
 }
 .next-video{
     grid-area:playNext;
-    background-color: rgb(0, 174, 255);
     display:grid;
     grid-template-columns: 50% 50%;
+  
 
 }
 
 #min-video1{
     grid-area:min-video1;
-    background-color: rgb(0, 174, 255);
     display:grid;
     grid-template-columns: 50% 50%;
 
 }
 #min-video2{
     grid-area:min-video2;
-    background-color: rgb(0, 174, 255);
+    
     display:grid;
     grid-template-columns: 50% 50%;
 
 }
 #min-video3{
     grid-area:min-video3;
-    background-color: rgb(0, 174, 255);
+    
     display:grid;
     grid-template-columns: 50% 50%;
 
@@ -202,28 +200,59 @@ body{
 
 .min-video{
     width: 100%;
-    background-color:skyblue;
+    
 }
 .min-video > iframe{
-    
+    width:205px;
+    height:124px;
     
     
 }
 .video-text{
     display:grid;
-    grid-template-rows: 40% 30% 30%;
-    
+    grid-template-rows: 30% 30% 18% 22%;
+    grid-template-areas: "title"
+    "channel"
+    "views"
+    "upload";
 }
 .min-title{
     width:100%;
-    background-color: yellow;
+    display:grid;
+    grid-area: title;
+    font-size: 16px;
+    font-weight: bold;
+    color:#fff;
+    justify-content: center;
+    
 }
 .min-channel{
     width:100%;
-    background-color: rgb(21, 255, 0);
+    
+    grid-area: channel;
+    font-size: 14px;
+    font-weight: lighter;
+    align-self: center;
+    color:grey;
+}
+.min-channel > p{
+    display:inline;
+    padding-right:5px;
 }
 .min-visualizations{
     width:100%;
-    background-color: rgb(234, 0, 255);
+    height: 30px;
+    display:grid;
+    grid-area:views;
+    font-size: 14px;
+    color:grey;
+   
+    
+}
+.min-uploaded{
+    display:grid;
+    grid-area: upload;
+    color:grey;
+    font-size:14px;
 }
 
